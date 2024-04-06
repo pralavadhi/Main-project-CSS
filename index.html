@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Book 4 Pro 360 - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js" defer></script>
+    <style>
+        /* CSS styles for slideshow */
+        .slideshow {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.webp" alt="logo image">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html" class="cta-button">Buy Now</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1><a href="index.html">Galaxy Book 4 Pro 360</a></h1>
+    </header>
+
+    <main>
+
+        <div class="slideshow">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/laptopp.webp" alt="Laptop">
+                </div>
+                <div class="slide">
+                    <img src="images/touch.webp" alt="Laptop 2">
+                </div>
+                <div class="slide">
+                    <img src="images/sam.webp" alt="Laptop 3">
+                </div>
+                <div class="slide">
+                    <img src="images/sung.webp" alt="Laptop 4">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+
+        <section class="intro">
+            <h2>The Future of Laptops</h2>
+            <div class="intro-para">
+                <p>
+                    Unleash your creativity and productivity with the Galaxy Book 4 Pro 360. Seamlessly transition from work to play with its powerful performance and versatile functionality.
+                    Whether you're editing photos, designing graphics, or streaming your favorite shows, the Galaxy Book 4 Pro 360 delivers an immersive experience like no other.
+                    <br><br>
+                    Its stunning 14 or 16-inch display brings your content to life with vibrant colors and sharp detail, while the responsive touchscreen and intuitive S Pen support provide new ways to interact and express yourself.
+                    Stay organized and efficient with the Galaxy Book 4 Pro 360's smart features, including facial recognition for secure login and Samsung DeX for a desktop-like experience.
+                    <br><br>With long-lasting battery life and fast charging capabilities, you can work and play for hours on end without interruption.
+                    Elevate your digital experience with the Galaxy Book 4 Pro 360 and discover the endless possibilities it has to offer.
+                </p>
+            </div>
+        </section>
+        <div class="video">
+            <video autoplay loop muted>
+                <source src="videos/laptop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <section class="reviews">
+            <h2>What Our Customers Are Saying</h2>
+            <div class="review">
+                <p>"The Galaxy Book 4 Pro 360 exceeds all my expectations. It's fast, lightweight, and the touchscreen is incredibly responsive. Highly recommended!"</p>
+                <p class="author">- John Doe</p>
+            </div>
+            <div class="review">
+                <p>"I've been using the Galaxy Book 4 Pro 360 for a month now, and I'm impressed with its performance and battery life. It's definitely worth the investment."</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+            <!-- Add more reviews as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <h4>Contact Us</h4>
+        <ul class="social-icons">
+            <li><a href="#index.html" target="_blank"><img src="images/face.png" alt="Facebook"></a></li>
+            <li><a href="index.html" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li>
+            <li><a href="index.html" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+        </ul>
+
+        <h6> Subscribe for latest news and offers</h6>
+        <div class="subscribe-form">
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your email address">
+                <input type="submit" value="Subscribe" class="subscribe-button">
+            </form>
+        </div>
+
+        <div class="address">
+            <p> Samsung Canada</p>
+            <p> 2050 Derry Rd W, Mississauga, ON</p>
+        </div>
+        <p>&copy; 2024 Galaxy Book 4 Pro 360. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            // Show the slide with the given index
+            slides[n].style.display = 'block';
+        }
+
+        function nextSlide() {
+            // Hide the current slide
+            slides[currentSlide].style.display = 'none';
+
+            // Move to the next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Show the next slide
+            slides[currentSlide].style.display = 'block';
+        }
+
+        // Initially show the first slide
+        showSlide(currentSlide);
+
+        // Automatically move to the next slide every 3 seconds
+        setInterval(nextSlide, 3000);
+    </script>
+</body>
+</html>

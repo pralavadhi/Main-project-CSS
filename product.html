@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Galaxy Book 4 Pro 360</title>
+    <link rel="stylesheet" href="css/product-styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/product.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo1.webp" alt="logo image">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="product.html" class="cta-button">Buy Now</a></li> <!-- New button added -->
+            </ul>
+        </nav>
+        <br>
+        <h1><a href="index.html">Galaxy Book 4 Pro 360</a></h1>
+    </header>
+
+    <main>
+        <div id="product-navigation">
+            <nav>
+                <ul>
+                    <li><a href="#specs">Specs</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="buy">
+        <h2>Buy Now</h2>
+            <div class="buy-options">
+                <div class="product-img">
+                    <img src="images/product.jpg" class="productimage" alt="galaxy">
+                    <br>
+                        <div class="options">
+                             <div class="os-options">
+                            <label for="os">Select OS:</label>
+                            <select name="os" id="os">
+                                <option value="windows_home">Windows 11 Home</option>
+                                <option value="windows_pro">Windows 11 Pro</option>
+                            </select>
+                            </div>
+                        <div class="memory-options">
+                            <label for="memory">Select Memory:</label>
+                            <select name="memory" id="memory">
+                                <option value="16GB">16GB</option>
+                                <option value="32GB">32GB</option>
+                                <option value="64GB">64GB</option>
+                            </select>
+                        </div>
+                        <div class="storage-options">
+                            <label for="storage">Select Storage:</label>
+                            <select name="storage" id="storage">
+                                <option value="256GB">256GB</option>
+                                <option value="512GB">512GB</option>
+                                <option value="1TB">1TB</option>
+                            </select>
+                        </div>
+                        <div class="screen-size-options">
+                            <label for="screen-size">Select Screen Size:</label>
+                            <select name="screen-size" id="screen-size">
+                                <option value="16_inches">16.0"</option>
+                                <option value="15.6_inches">15.6"</option>
+                            </select>
+                        </div>
+                        <div class="graphics-options">
+                            <label for="graphics">Select Graphics:</label>
+                            <select name="graphics" id="graphics">
+                                <option value="intel_arc_graphics">Intel ARC Graphics</option>
+                                <option value="intel_graphics">Intel Graphics</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="action-buttons">
+                        <button onclick="addToCart()">Add to Cart</button>
+                    </div>
+                </div>
+                <div id="cart-message" class="cart-message"></div>
+            </div>
+</section>
+
+        <section id="specs">
+            <h2>Specifications</h2>
+            <section class="specs">
+                <h2>Galaxy Book 4 Pro 360 Specifications</h2>
+                <table>
+                    <tr>
+                        <th>Specification</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Processor</td>
+                        <td>Intel Core i7-1165G7 (11th Gen) Quad-Core Processor</td>
+                    </tr>
+                    <tr>
+                        <td>Memory</td>
+                        <td>16GB LPDDR4X RAM</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>512GB PCIe NVMe SSD</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>13.3-inch FHD+ (1920 x 1200 pixels) Touchscreen</td>
+                    </tr>
+                    <tr>
+                        <td>Graphics</td>
+                        <td>Intel Iris Xe Graphics</td>
+                    </tr>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>Windows 11 Home</td>
+                    </tr>
+                    <tr>
+                        <td>Dimensions</td>
+                        <td>12.11 x 8.93 x 0.59 inches (307.6 x 226.9 x 14.9 mm)</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>Approx. 2.65 lbs (1.2 kg)</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>Up to 20 hours (may vary depending on usage)</td>
+                    </tr>
+                    <tr>
+                        <td>Connectivity</td>
+                        <td>Wi-Fi 6E (802.11ax), Bluetooth 5.1</td>
+                    </tr>
+                    <tr>
+                        <td>Ports</td>
+                        <td>
+                            <ul>
+                                <li>2 x Thunderbolt 4</li>
+                                <li>1 x USB Type-C</li>
+                                <li>3.5mm headphone/microphone combo jack</li>
+                                <li>MicroSD card reader</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            
+        </section>
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Features</h2>
+                <ul>
+                    <li>Versatile 2-in-1 Design</li>
+                    <li>High-Performance Processor</li>
+                    <li>Vibrant Touchscreen Display</li>
+                    <li>Ample Memory and Storage</li>
+                    <li>Intel Iris Xe Graphics</li>
+                    <li>Windows 11 Home</li>
+                    <li>Slim and Lightweight Design</li>
+                    <li>Long Battery Life</li>
+                    <li>Advanced Connectivity</li>
+                    <li>Versatile Ports</li>
+                </ul>   
+        </section>
+
+        <section id="offers">
+            <h2>Special Offers</h2>
+            <div class="offer">
+                <h3>Back-to-School Discount</h3>
+                <p>Get ready for the new school year with exclusive discounts on the Galaxy Book 4 Pro 360. Limited time offer!</p>
+            </div>
+            <div class="offer">
+                <h3>Bundle Deal</h3>
+                <p>Save big when you purchase the Galaxy Book 4 Pro 360 along with select accessories. Don't miss out!</p>
+            </div>
+            <div class="offer">
+                <h3>Trade-In Offer</h3>
+                <p>Trade in your old device and receive a discount on your purchase of the Galaxy Book 4 Pro 360. Upgrade today!</p>
+            </div>
+        </section>
+        
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            
+            <div class="review">
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p>"The Galaxy Book 4 Pro 360 is simply amazing! The design is sleek, the performance is top-notch, and the battery life is impressive. I couldn't be happier with my purchase!"</p>
+                <p class="author">- Emily Johnson</p>
+            </div>
+            
+            <div class="review">
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p>"I've been using the Galaxy Book 4 Pro 360 for both work and entertainment, and it has exceeded my expectations in every way. The versatility of the 2-in-1 design is fantastic, and the touchscreen display is a joy to use."</p>
+                <p class="author">- Michael Smith</p>
+            </div>
+            
+            <div class="review">
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <p>"As a graphic designer, I rely on a laptop that can handle intensive tasks with ease. The Galaxy Book 4 Pro 360 delivers exceptional performance and allows me to work efficiently wherever I go. It's definitely worth the investment!"</p>
+                <p class="author">- Sarah Thompson</p>
+            </div>
+            
+            <div class="review">
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p>"Overall, I'm very satisfied with the Galaxy Book 4 Pro 360. The only downside is that the speakers could be louder, but it's a minor issue compared to the laptop's overall performance and features."</p>
+                <p class="author">- David Miller</p>
+            </div>
+            
+            <div class="review">
+                <div class="rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                </div>
+                <p>"The Galaxy Book 4 Pro 360 is a great laptop for everyday use. It's fast, reliable, and the battery life is impressive. However, I wish the webcam quality was better."</p>
+                <p class="author">- Jennifer Brown</p>
+            </div>
+        </section>
+        <section id="support">
+    <h2>Customer Support</h2>
+    
+    <div class="support-option">
+        <h3>Contact Us</h3>
+        <p>If you have any questions or need assistance, our customer support team is available to help. You can reach us via email, phone, or live chat.</p>
+    </div>
+    
+    <div class="support-option">
+        <h3>FAQs</h3>
+        <p>Find answers to common questions about the Galaxy Book 4 Pro 360 in our FAQ section. Browse through our frequently asked questions to get quick solutions to your queries.</p>
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="question">
+                <h3>Q: What are the key features of the Galaxy Book 4 Pro 360?</h3>
+                <p>A: The Galaxy Book 4 Pro 360 features a 2-in-1 design, high-resolution touchscreen display, powerful Intel Core processors, long battery life, and advanced connectivity options.</p>
+            </div>
+            
+            <div class="question">
+                <h3>Q: Is the Galaxy Book 4 Pro 360 suitable for gaming?</h3>
+                <p>A: While the Galaxy Book 4 Pro 360 is primarily designed for productivity and multitasking, it can handle casual gaming and some less demanding titles with ease.</p>
+            </div>
+            
+            <div class="question">
+                <h3>Q: What accessories are compatible with the Galaxy Book 4 Pro 360?</h3>
+                <p>A: The Galaxy Book 4 Pro 360 is compatible with a range of accessories, including keyboards, stylus pens, USB-C hubs, and external monitors.</p>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="support-option">
+        <h3>Product Manuals</h3>
+        <p>Access user manuals, guides, and documentation for the Galaxy Book 4 Pro 360. Our product manuals provide detailed instructions and information to help you get the most out of your device.</p>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <h4>Contact Us</h4>
+        <ul class="social-icons">
+            <li><a href="#index.html" target="_blank"><img src="images/face.png" alt="Facebook"></a></li>
+            <li><a href="index.html" target="_blank"><img src="images/insta.png" alt="Instagram"></a></li>
+            <li><a href="index.html" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></li>
+        </ul>
+
+        <h6> Subscribe for latest news and offers</h6>
+        <div class="subscribe-form">
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your email address">
+                <input type="submit" value="Subscribe" class="subscribe-button">
+            </form>
+        </div>
+
+        <div class="address">
+            <p> Samsung Canada</p>
+            <p> 2050 Derry Rd W, Mississauga, ON</p>
+        </div>
+        <p>&copy; 2024 Galaxy Book 4 Pro 360. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

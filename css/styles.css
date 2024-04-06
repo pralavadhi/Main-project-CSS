@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #1d1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Oswald;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav img {
+    width: 150px;
+}
+
+header img:hover{
+        transform: scale(1.1); /* Scale up on hover */
+        border-color: #ffffff; /* Change border color on hover */
+    
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+header nav ul li {
+    margin-right: 2px;
+    padding:5px;
+    color:white;
+    font-weight: bold;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: rgb(111, 111, 109);
+}
+
+header nav ul li a:hover {
+    background-color: #000000;
+}
+
+header .cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+    background-color: #0056b3;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+header h1:hover{
+    transform: scale(1.5); /* Scale up on hover */
+    border-color: #0073ff; /* Change border color on hover */
+
+}
+main {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #e6e6e6;
+}
+/* CSS for the button */
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+/* CSS for intro section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+footer p{
+    font-family: Noto Serif;
+}
+/* CSS for reviews section */
+.reviews {
+    text-align: center;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review p {
+    font-style: italic;
+}
+
+.review .author {
+    font-weight: bold;
+}
+/* CSS for product navigation buttons */
+#product-navigation ul {
+    list-style: none;
+    text-align: center;
+}
+
+#product-navigation ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#product-navigation ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0b0b0b; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#product-navigation ul li a:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+
+h2{
+    font-family: Barlow Condensed;
+}
+
+p{
+    font-family: Oswald;
+    font-size: larger;
+    font-weight: 100;
+}
+
+/* For small screens */
+@media only screen and (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 30px 0;
+    }
+    header nav ul li:last-child {
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        padding: 1px;
+        display: none;
+    }
+
+    .intro h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 601px) {
+    header nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-icons li a img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    border-radius: 50%; /* Make them circular */
+    border: 2px solid transparent; /* Add border */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    border-color: #007bff; /* Change border color on hover */
+}
+.subscribe-form {
+    margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+h6, H4{
+    font-family: Noto Serif;
+    font-size:large;
+    align-items: center;
+    padding: 10px;
+}
+.subscribe-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.subscribe-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.address {
+    font-family:Noto Serif ;
+    font-size: large;
+    font-size: 16px;
+    color: #fdfdfd;
+}
+.subscribe-button {
+    margin-top: 10px; /* Add space above the button */
+}
